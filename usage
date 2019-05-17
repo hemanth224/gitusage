@@ -1,0 +1,72 @@
+1.	Git branch
+2.	yamini@DESKTOP-TAGRVN1 MINGW64 /c/users/yamini/Desktop/DevOps/awspractice/kubek8s (new-one)
+3.	$ git branch
+4.	  master
+5.	* new-one
+6.	  new-two
+2.  git checkout –b new-one ( it creates and checks out branch)
+3. git branch to see the branch
+Git remote (to see the origin)
+Origin is by default the remote layer which is not local and push to remote server.
+4.  to see the status : git status
+ 
+5.  to see the latest commit which is head state of that branch: git show HEAD
+ 
+7.	To see the history of commits : git log  --we can see d4503f is the latest commit
+ 
+
+8.	Difference between branches: using git diff  branch1 branch2
+(always git diff with branch-branch or tag –tag as best practice)
+
+ 
+a.	Diff –git a/fileone.txt   b/fileone.txt  (its comparing left new-one to right new-two branch)
+b.	--- a/fileone.txt   (a new-one branch)
+c.	+++ b/fileone.txt (b new-two branch)
+
+For example:
+
+In the a new-one branch ( -4. Adding for test in new-one branch is the new one branch which we compared starting)
+We see the line in adding for test in new-one branch:
+
+ 
+
+
+
+TAGS:
+
+1.	Tags create a released version where it is in a detached head state and no longer commits are accepted
+2.	Git tag (to see the tags)
+
+ 
+
+3.	After creating tag using git tag sit/new-two 
+4.	We need to push the tag  (we need to know remote)
+Git remote
+Git push –u origin sit/new-two
+
+ 
+
+
+In repo:
+
+ 
+
+
+
+
+
+
+Enterprise and  Private git Differences:
+1.	Enterprise git can have unlimited repos.
+2.	Private git each repo 7 $ and private can create branches and can have the protected branches which can be treated as master
+We can set a default branch:
+ 
+
+3.	In Private git repository we can protection branches.
+4.	
+
+
+
+
+
+
